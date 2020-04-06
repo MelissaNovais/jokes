@@ -1,0 +1,47 @@
+.title{
+	color: #222;
+	font-size: 3.2rem;
+	margin: 3rem 0;
+	text-align: center;
+
+	&:first-child{
+		margin-top: 20vh;
+	}
+
+	&--loading{
+		font-size: 2rem;
+	}
+}
+
+.button{
+	display: flex;
+	justify-content: center;		
+	margin: 5rem auto;
+	border-radius: 2rem;
+	height: 4rem;
+	width: 12rem;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	box-shadow: rgba(#000, .3) 0 3px 6px;
+	outline: 0;
+	transition: all .2s;
+	
+	&--joke{
+		background: transparent;
+		border: 2px solid #FF5722;
+		color: #E64A19;
+	}
+
+	&--next{
+		background: #FF5722;
+		color: white;
+		border: none;
+	}
+
+	&:hover{
+		box-shadow: rgba(#FF5722, .3) 0 3px 6px;
+		cursor: pointer;
+	}
+}
+

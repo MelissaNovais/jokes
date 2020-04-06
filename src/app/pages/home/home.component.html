@@ -1,0 +1,18 @@
+<h3 *ngIf="!joke; else showJoke" class="title title--loading">Loading...</h3>
+<ng-template #showJoke>
+	<h3 class="title">
+		{{this.joke.setup}}
+	</h3>
+
+	<h3 *ngIf="showPunchline" class="title">
+		{{this.joke.punchline}}
+	</h3>
+
+	<button class="button button--joke" *ngIf="!showPunchline" (click)="showJokePunchline()">
+		Show
+	</button>
+
+	<button class="button button--next" *ngIf="showPunchline" (click)="getNextJoke()">
+		Get another!
+	</button>
+</ng-template>

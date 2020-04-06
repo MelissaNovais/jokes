@@ -1,0 +1,34 @@
+.header{
+	background: #FFCCBC;
+	height: 5rem;
+	margin: 0 -10rem;
+	padding: 0rem 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: rgba(#222, .9);
+	font-size: 1.4rem;
+	font-weight: bold;
+	
+	&__text{
+	
+	}
+
+	&__navbar{
+
+		&__link{
+			text-decoration: none;
+			cursor: pointer;
+			color: rgba(#222, .9);
+
+			&:not(:last-child){
+				margin-right: 2rem;	
+			}
+		}
+	}
+
+	@media (max-width: 600px) {
+		margin: 0 -3rem;
+		padding: 0 3rem;
+	}
+}
