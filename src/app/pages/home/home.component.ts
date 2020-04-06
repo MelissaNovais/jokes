@@ -8,10 +8,10 @@ import { ApiService } from 'src/app/api/api.service';
 })
 export class HomeComponent implements OnInit {
 
-  private joke: any = null;
-  private  showPunchline: boolean = false;
-  private isLoadingJoke = true;
-  constructor(private apiService: ApiService) { }
+  public joke: any = null;
+  public  showPunchline: boolean = false;
+  public isLoadingJoke = true;
+  constructor(public apiService: ApiService) { }
 
   ngOnInit() {
     this.getJoke();
