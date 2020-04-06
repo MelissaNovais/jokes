@@ -6,9 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 
-  private url = "https://official-joke-api.appspot.com/jokes/programming/random";
+  url = "https://official-joke-api.appspot.com/jokes/programming/random";
 
-  constructor(private http: HttpClient) { }
+  constructor(public http: HttpClient) { }
 
   async getRandomJoke(){
     const response =  await this.http.get(this.url).toPromise();
